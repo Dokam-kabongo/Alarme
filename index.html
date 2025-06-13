@@ -2,35 +2,52 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Bibliothèque Universitaire - Accueil</title>
-  <link rel="stylesheet"href="style.css">
-  <script src="script.js" defer></script>
+  <title>Accueil | Bibliothèque Universitaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="portfolio.html">Port Folio</a></li>
-        <li><a href="emprunter.html">Emprunter</a></li>
-        <li><a href="retour.html">Retour</a></li>
-        <li><a href="enregistrement.html">Enregistrement</a></li>
-        <li><a href="renseignements.html">Renseignements</a></li>
-        <li><a href="stock.html">Stock</a></li>
-      </ul>
-    </nav>
+ <header>
+    <h1 class="main-title">
+      <a href="index.html">
+        Bienvenue dans la <span>Bibliothèque</span>
+      </a>
+    </h1>
+    <p class="subtitle">Découvrez, empruntez, partagez la connaissance !</p>
   </header>
+
   <section class="hero">
-    <div class="overlay"></div>
+    <img src="./methia.jpg" alt="Étagère de livres" class="hero-alarm" width="50px">
     <div class="hero-content">
-      <h2>Système de gestion de ressources d'une bibliothèque universitaire</h2>
-      <p>Gérez facilement vos emprunts, retours, et plus encore.</p>
-      <a href="emprunter.html" class="cta">Emprunter un livre</a>
+      <h2>Votre univers de lecture commence ici</h2>
+      <p>Explorez notre collection, découvrez nos services, et vivez une expérience unique au cœur du savoir.</p>
+      <a href="stock.html" class="hero-btn">Voir le stock de livres</a>
     </div>
   </section>
+
+  <section class="atouts">
+    <h3>Pourquoi choisir notre bibliothèque ?</h3>
+    <div class="atouts-list">
+      <div class="atout">
+        <span class="atout-icon">📚</span>
+        <h4>Large choix d’ouvrages</h4>
+        <p>Des centaines de livres dans toutes les disciplines pour nourrir votre curiosité.</p>
+      </div>
+      <div class="atout">
+        <span class="atout-icon">🕒</span>
+        <h4>Accessibilité</h4>
+        <p>Un accès facile et rapide à notre collection, sur place ou en ligne.</p>
+      </div>
+      <div class="atout">
+        <span class="atout-icon">🤝</span>
+        <h4>Accompagnement</h4>
+        <p>Une équipe à votre écoute pour vous guider dans vos recherches et vos lectures.</p>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <p>© 2025 Bibliothèque Universitaire | By Dokam KABONGO MWANA NDAYA</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
