@@ -1,0 +1,137 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #e0e7ef 0%, #c6d0f5 50%, #f8e7dc 100%);
+  color: #212529;
+}
+
+header nav {
+  background: linear-gradient(90deg, #0f2027, #2c5364, #067fd0);
+  box-shadow: 0 2px 10px rgba(34,34,34,0.07);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 18px;
+}
+
+header nav ul li a {
+  color: #f8e7dc;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 0;
+  letter-spacing: 1px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+header nav ul li a:hover {
+  color: #067fd0;
+  border-bottom: 2px solid #d2691e; /* chocolat */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 56px;
+}
+
+h2 {
+  color: #212529;
+  background: linear-gradient(90deg, #067fd0 20%, #d2691e 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.1em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+  text-shadow: 1px 1px 4px #bdbdbd88;
+}
+
+form#emprunt-form {
+  background: #222;
+  background: linear-gradient(135deg, #222 65%, #d2691e22 100%);
+  padding: 36px 28px 28px 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.16), 0 1.5px 6px #067fd022;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2.5px solid #067fd0;
+}
+
+form#emprunt-form input[type="text"] {
+  padding: 11px 13px;
+  border: 1.6px solid #d2691e;
+  border-radius: 8px;
+  font-size: 1em;
+  background: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 1px 4px #d2691e22;
+}
+
+form#emprunt-form input[type="text"]:focus {
+  border-color: #067fd0;
+  background: #e0e7ef;
+  outline: none;
+  box-shadow: 0 0 8px #067fd099;
+}
+
+form#emprunt-form button {
+  background: linear-gradient(90deg, #067fd0 70%, #d2691e 100%);
+  color: #fff;
+  padding: 13px 0;
+  font-size: 1.08em;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 12px #067fd055;
+  transition: background 0.25s, transform 0.18s;
+}
+
+form#emprunt-form button:hover {
+  background: linear-gradient(90deg, #d2691e 30%, #067fd0 100%);
+  transform: scale(1.04);
+  color: #e0e7ef;
+}
+
+#emprunt-result {
+  margin-top: 18px;
+  min-height: 24px;
+  font-size: 1.06em;
+  color: #067fd0;
+  background: #f1f1f1dd;
+  border-radius: 6px;
+  padding: 8px 0;
+  text-align: center;
+  box-shadow: 0 1px 6px #067fd022;
+}
+
+footer {
+  margin-top: 64px;
+  background: linear-gradient(90deg, #222, #212529, #d2691e88);
+  color: #f1f1f1;
+  text-align: center;
+  padding: 17px 0 13px 0;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  border-top: 2.2px solid #067fd0;
+  box-shadow: 0 -1.5px 8px #22222233;
+}
