@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Emprunter un livre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Idem menu principal -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="portfolio.html">Port Folio</a></li>
+        <li><a href="emprunter.html">Emprunter</a></li>
+        <li><a href="retour.html">Retour</a></li>
+        <li><a href="enregistrement.html">Enregistrement</a></li>
+        <li><a href="renseignements.html">Renseignements</a></li>
+        <li><a href="stock.html">Stock</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Emprunter un livre</h2>
+    <form id="emprunt-form">
+      <input type="text" name="noms" placeholder="Votre noms" required>
+      <input type="text" name="promotion" placeholder="votre promotion" required>
+      <input type="text" name="faculté" placeholder="Votre faculté" required>
+      <input type="text" name="livre" placeholder="Titre du livre" required>
+      
+      <button type="submit">Emprunter</button>
+    </form>
+    <div id="emprunt-result"></div>
+  </main>
+  <footer>
+    <p>© 2025 Bibliothèque Universitaire | By Dokam KABONGO MWANA NDAYA</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('emprunt-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = new FormData(this);
+      data.append('action', 'emprunter');
+      fetch('bibliotheque.php', {
+        method:'POST',
+        body: data
+      })
+      .then(response => response.json())
+      .then(res => {
+        document.getElementById('emprunt-result').innerText = res.message || res.error;
+      });
+    });
+  </script>
+</body>
+</html>
